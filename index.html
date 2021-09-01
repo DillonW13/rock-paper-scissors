@@ -3,13 +3,36 @@
 <head>
     <title>Rock, Paper, Scissors Game</title>
     <meta charset="UTF-8">
-    <script src="game.js">
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js" defer>
 
     </script>   
 </head>
 <body>
-    <p class='test'>hello</p>
+    <div class="content">    
+        <div class="title-sec">
+             <h1 class="title">Rock, Paper, Scissors</h1>
+        </div>
+       
+        <div class="btn-menu">
+            <button id="1" class="rock-btn">
+                <img id="rock-pic" src="Pics/rock.jpeg" alt="Picture of Rock">
+            </button>
+            <button id="2" class="paper-btn">
+                <img id="paper-pic" src="Pics/paper.jpg" alt="Picture of Paper">
+            </button>
+            <button id="3" class="scissors-btn">
+                <img id="scissors-pic" src="Pics/scissors.png" alt="Picture of Scissors">
+            </button>        
+        </div>
+    </div>
+    <div class="reset">
+        <button class="reset-btn">
+            <p>Rematch</p>
+        </button>
+    </div>
+
+    <audio class="victory-sound" src="Sounds/SMALL_CROWD_APPLAUSE-Yannick_Lemieux-1268806408.mp3"></audio>
+    <audio class="losing-sound" src="Sounds/Crowd Boo 3-SoundBible.com-595364990.mp3"></audio>
 </body>
-
-
 </html>

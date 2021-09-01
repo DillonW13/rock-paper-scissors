@@ -1,0 +1,142 @@
+body {
+    background-image: url("Pics/woodbackground.jpg");
+    color: black;
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: RampartOne;
+    src: url("Fonts/RampartOne-Regular.ttf");
+}
+
+
+
+h1 {
+    font-family: RampartOne, sans-serif;
+    font-size: 2em;
+    color: rgb(92, 8, 8);
+}
+
+.title-sec {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex: 1 0 50px;
+    background-image: url("Pics/notebook.jpg");
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.btn-menu {
+    display: flex; 
+    flex: 1 1 200px;
+    justify-content: space-evenly;
+    background-color: transparent;
+    padding: 20px 60px 20px 60px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: stretch;
+    background-color: transparent;
+    font-family: PermanentMarker;
+}
+
+@font-face {
+    font-family: PermanentMarker;
+    src: url("Fonts/PermanentMarker-Regular.ttf");
+}
+
+.btn-menu button {
+    border: 2px solid black;
+    border-radius: 5%;
+    background-color: white;
+    width: 20%;
+}
+
+button:hover {
+    scale: 1.1;
+    border: 4px solid yellow;
+    overflow: hidden;
+}
+ 
+.rock-btn:hover #rock-pic {
+    animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+
+@keyframes zoom-in-zoom-out {
+   0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#rock-pic {
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+.paper-btn:hover #paper-pic {
+    animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+#paper-pic {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.scissors-btn:hover #scissors-pic {
+    animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+#scissors-pic {
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+.reset {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+}
+
+#player-pic {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+#computer-pic {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 50%;
+ }
+
+.reset-btn {
+    background-color: red;
+    border: 2px solid black;
+    font-family: PermanentMarker, sans-serif;
+    width: 100px;
+    height: 55px;
+    border-radius: 50%;
+ }
